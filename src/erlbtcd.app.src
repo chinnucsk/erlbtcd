@@ -1,0 +1,17 @@
+{application, erlbtcd,
+ [
+  {description, "Bitcoin Server Daemon in Erlang"},
+  {vsn, "1"},
+  {modules, [
+             erlbtcd_app,
+             erlbtcd_sup,
+             erlbtcd_server
+            ]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { erlbtcd_app, []}},
+  {env, []}
+ ]}.
